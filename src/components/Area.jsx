@@ -44,7 +44,7 @@ function Area() {
         <input type="number" name="length3" onChange={handleInputChange} />
         <button onClick={calculate}>Calculate Area</button>
       </form>
-      {result && <p className="angleResult">Area : {result}</p>}
+      {result !== null && <p className="angleResult">Area : {result}</p>}
     </div>
   );
 }
