@@ -1,6 +1,8 @@
 import { useState } from "react";
 import "./App.css";
 
+import Home from "./components/Home";
+
 function App() {
   const [currentNav, setCurrentNav] = useState(0);
 
@@ -46,7 +48,7 @@ function App() {
           </li>
         </ul>
       </nav>
-      <p>{currentNav}</p>
+      <main>{currentNav === 0 && <Home />}</main>
       <footer>
         Create with love by <a href="https://atulgairola.tech">Atul Gairola</a>
       </footer>

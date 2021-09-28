@@ -1,6 +1,10 @@
+body {
+  background: #0a0a0a;
+  color: #fff;
+}
 nav {
   display: flex;
-  padding: 20px;
+  padding: 20px 50px;
   align-items: center;
 }
 
@@ -28,4 +32,8 @@ nav {
 
 .activeLink {
   border-bottom: 1px solid black;
+}
+
+main {
+  padding: 50px;
 }

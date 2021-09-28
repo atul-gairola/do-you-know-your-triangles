@@ -1,0 +1,21 @@
+.heroContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  grid-gap: 50px;
+}
+
+.heroText > h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.heroText > p {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.heroImage {
+  width: 500px;
+  justify-self: end;
+}
