@@ -34,7 +34,7 @@ function CheckAngles() {
 
   return (
     <div className="hypotenuseContainer">
-      <h1>Calculate the Hypotenuse of a triangle</h1>
+      <h1>Check if these angles can make a triangle</h1>
       <form>
         <label htmlFor="angle1">First Angle:</label>
         <input type="number" name="angle1" onChange={handleInputChange} />

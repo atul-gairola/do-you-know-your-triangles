@@ -5,6 +5,7 @@ import Home from "./components/Home";
 import Quiz from "./components/Quiz";
 import Hypotenuse from "./components/Hypotenuse";
 import CheckAngles from "./components/CheckAngles";
+import Area from "./components/Area";
 
 function App() {
   const [currentNav, setCurrentNav] = useState(0);
@@ -55,6 +56,7 @@ function App() {
         {currentNav === 0 && <Home />}
         {currentNav === 1 && <Quiz />}
         {currentNav === 2 && <Hypotenuse />}
+        {currentNav === 3 && <Area />}
         {currentNav === 4 && <CheckAngles />}
       </main>
       <footer>

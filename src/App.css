@@ -11,6 +11,9 @@ nav {
 .logo {
   flex-grow: 1;
   cursor: pointer;
+  font-weight: bold;
+  font-size: 1.3rem;
+  width: fit-content;
 }
 
 .linksContainer {
@@ -31,9 +34,15 @@ nav {
 }
 
 .activeLink {
-  border-bottom: 1px solid black;
+  border-bottom: 2px solid #fff;
 }
 
 main {
   padding: 50px;
+  min-height: calc(100vh - 133px);
+}
+
+footer {
+  padding: 20px 30px;
+  text-align: center;
 }
