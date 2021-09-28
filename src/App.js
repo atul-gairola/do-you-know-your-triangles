@@ -2,6 +2,7 @@ import { useState } from "react";
 import "./App.css";
 
 import Home from "./components/Home";
+import Quiz from "./components/Quiz";
 
 function App() {
   const [currentNav, setCurrentNav] = useState(0);
@@ -20,35 +21,38 @@ function App() {
         <ul className="linksContainer">
           <li
             id={1}
-            className={currentNav === 1 && "activeLink"}
+            className={currentNav === 1 ? "activeLink" : ""}
             onClick={handleNavChange}
           >
             Quiz
           </li>
           <li
             id={2}
-            className={currentNav === 2 && "activeLink"}
+            className={currentNav === 2 ? "activeLink" : ""}
             onClick={handleNavChange}
           >
             Calculate Hypotenuse
           </li>
           <li
             id={3}
-            className={currentNav === 3 && "activeLink"}
+            className={currentNav === 3 ? "activeLink" : ""}
             onClick={handleNavChange}
           >
             Calculate Area
           </li>
           <li
             id={4}
-            className={currentNav === 4 && "activeLink"}
+            className={currentNav === 4 ? "activeLink" : ""}
             onClick={handleNavChange}
           >
             Check Angles
           </li>
         </ul>
       </nav>
-      <main>{currentNav === 0 && <Home />}</main>
+      <main>
+        {currentNav === 0 && <Home />}
+        {currentNav === 1 && <Quiz />}
+      </main>
       <footer>
         Create with love by <a href="https://atulgairola.tech">Atul Gairola</a>
       </footer>
