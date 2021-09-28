@@ -30,12 +30,19 @@ function Hypotenuse() {
       <h1>Calculate the Hypotenuse of a triangle</h1>
       <form>
         <label htmlFor="number">Base Side (a):</label>
-        <input type="number" name="base" onChange={handleInputChange} />
+        <input type="number" min="0" name="base" onChange={handleInputChange} />
         <label htmlFor="number">Height (b):</label>
-        <input type="number" name="height" onChange={handleInputChange} />
+        <input
+          type="number"
+          name="height"
+          min="0"
+          onChange={handleInputChange}
+        />
         <button onClick={calculate}>Calculate Hypotenuse</button>
       </form>
-      {result && <p className="hypotenuseResult" >The hypotenuse is : {result}</p>}
+      {result && (
+        <p className="hypotenuseResult">The hypotenuse is : {result}</p>
+      )}
     </div>
   );
 }
