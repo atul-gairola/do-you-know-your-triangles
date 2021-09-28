@@ -3,6 +3,7 @@ import "./App.css";
 
 import Home from "./components/Home";
 import Quiz from "./components/Quiz";
+import Hypotenuse from "./components/Hypotenuse";
 
 function App() {
   const [currentNav, setCurrentNav] = useState(0);
@@ -52,6 +53,7 @@ function App() {
       <main>
         {currentNav === 0 && <Home />}
         {currentNav === 1 && <Quiz />}
+        {currentNav === 2 && <Hypotenuse />}
       </main>
       <footer>
         Create with love by <a href="https://atulgairola.tech">Atul Gairola</a>
